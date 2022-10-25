@@ -1,0 +1,124 @@
+body {
+    background-color: #D8D9CF;
+    display: block;
+    margin: 8px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 6rem;
+    text-shadow: 5px 0 #EDEDED;
+    color: #E26868;
+    margin: 30px;
+}
+
+button {
+    font-family: 'Lobster', cursive;
+    display: block;
+    width: 600px;
+    margin: 5% auto 0 ;
+    padding: 1%;
+    font-size: 1.8rem;
+    background-color: #EDEDED;
+    color: #E26868;
+    border-radius: 25px;
+    border: solid 2px #E26868;
+    transition: 0.5s;
+}
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    display: inline-block;
+    margin: 20px;
+}
+
+.dice p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    color: #E26868;
+}
+
+/* Button Effects */
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+button:not(:hover) {
+    transform: scale(1.0);
+}
+
+button:active {
+    transition: 0.1s;
+    opacity: 0.5;
+}
+
+/* Meida Queries */
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    .dice {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .dice img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    .dice {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .dice img {
+       width: 100%;
+    }
+
+}
+
+@media only screen and (max-height: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (min-height: 920px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
